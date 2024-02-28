@@ -1,0 +1,177 @@
+@import url('https://fonts.cdnfonts.com/css/cocogoose');  
+  
+  *{
+    font-family: 'COCOGOOSE', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background-color: rgb(255, 208, 0);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header svg{
+    fill: white;
+  }
+
+  .main-header{
+    justify-content: center;
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .trip-calc{
+    margin-left: 10px;
+  }
+
+  .calculator{
+    color: white;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .trip{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+  }
+
+  header{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 60px;
+    background-color:black;
+    width: 100%;
+  }
+  
+  main{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+  }
+
+  .box{
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form{
+    position: relative;
+  }
+
+  .email{
+    font-size: 0.8rem;
+    left: 10px;
+    background-color: white;
+    top: -8px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    z-index: 1;
+    position: absolute;
+  }
+
+  .btt{
+    display: flex;
+    gap: 20px;
+  }
+
+  input{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 300px;
+    height: 35px;
+    padding-left: 20px;
+  }
+
+  .text{
+    margin-left: 10px;
+    margin-bottom: 30px;
+    width: 400px;
+  }
+
+  .bottom{
+    margin-left: 10px;
+    width: 400px;
+    flex-direction: column;
+    display: flex;
+    margin-top: 40px;
+    gap: 10px;
+  }
+
+  #dollar{
+    margin-top: 20px;
+    width: 50px;
+  }
+
+.money-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.alert-digite-mail, .alert-digite-money, .alert-digite-arroba{
+    display: none;
+    color: red;
+    font-size: 0.7rem;
+}
+
+  .money{
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    position: absolute;
+    font-size: 0.8rem;
+    left: 10px;
+    top: 14px;
+    background-color: white;
+  }
+
+  .main{
+    background-color: white;
+    box-shadow: black 10px 10px;
+    border-radius: 7px;
+    justify-content: center;
+    width: 400px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+
+.send{
+  transition: 0.3s;
+  width: 80px;
+  background-color: rgb(255, 208, 0);
+  border: none;
+  border-radius: 3px;
+}
+
+.send:hover {
+  transform: scale(0.9);
+  filter: drop-shadow(rgba(0, 0, 0, 0.253) -3px 3px 3px);
+}
+
+.rst{
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  padding: 7px 20px;
+  width: 80px;
+  transition: 0.3s;
+}
+
+.rst:hover {
+  border: 2px solid rgba(0, 0, 0, 0.171);
+  transform: scale(0.9);
+}
