@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/cocogoose');  
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
   
   *{
     font-family: 'COCOGOOSE', sans-serif;
@@ -7,11 +8,66 @@
   }
 
   body{
+    max-width: 100vw;
     background-color: rgb(255, 208, 0);
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .max-width{
+    box-shadow: rgba(0, 0, 0, 0.438) 0px 0px 20px;
+    background-color: rgb(255, 208, 0);
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    max-width: 1600px;
+    height: 100vh;
+  }
+
+  .circle-1{
+    top: 100px;
+    right: 0px;
+    position: absolute;
+  }
+
+  .circle-2{
+    width: 200px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotate(180deg);
+  }
+
+  .tsk-1, .tsk-2{
+    color: white;
+  }
+
+  .tsk-1{
+    line-height: 30px;
+    font-size: 2.07rem;
+  }
+
+  .tsk-2{
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .bold{
+    color: black;
+    font-family: 'Inter', sans-serif; 
+    font-weight: 900;
+  }
+
+  .task{
+    gap: 20px;
+    margin-top: 70px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
   }
 
   header svg{
@@ -46,11 +102,11 @@
     display: flex;
     height: 60px;
     background-color:black;
-    width: 100%;
+    width: 100vw;
+    border: px white;
   }
   
   main{
-    height: 85vh;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -62,11 +118,16 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
   }
 
   .form{
     position: relative;
+  }
+
+  #email, #dollar{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
   }
 
   .email{
@@ -88,8 +149,8 @@
   input{
     border: 2px solid black;
     border-radius: 5px;
-    width: 300px;
-    height: 35px;
+    width: 400px;
+    height: 45px;
     padding-left: 20px;
   }
 
@@ -110,10 +171,11 @@
 
   #dollar{
     margin-top: 20px;
-    width: 50px;
+    width: 70px;
   }
 
 .money-box{
+  margin-top: 10px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -136,16 +198,17 @@
   }
 
   .main{
+    min-height: 300px;
     background-color: white;
-    box-shadow: black 10px 10px;
-    border-radius: 7px;
+    box-shadow: black 15px 15px;
+    border-radius: 20px;
     justify-content: center;
-    width: 400px;
-    border: 2px solid black;
+    width: 550px;
+    border: 3px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
   }
 
 
