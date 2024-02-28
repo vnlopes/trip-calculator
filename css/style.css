@@ -16,6 +16,11 @@
     align-items: center;
   }
 
+  .max-height{
+    position: relative;
+    max-height: 900px;
+  }
+
   .max-width{
     box-shadow: rgba(0, 0, 0, 0.438) 0px 0px 20px;
     background-color: rgb(255, 208, 0);
@@ -34,6 +39,7 @@
   }
 
   .circle-2{
+    z-index: 2;
     width: 200px;
     left: 0;
     bottom: 0;
