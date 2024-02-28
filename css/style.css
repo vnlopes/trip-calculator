@@ -223,6 +223,7 @@
   }
 
   .reboot{
+    cursor: pointer;
     border: none;
     border-radius: 20px;
     margin-top: 50px;
@@ -292,6 +293,7 @@
 
 
 .send{
+  cursor: pointer;
   transition: 0.3s;
   width: 80px;
   background-color: rgb(255, 208, 0);
@@ -305,6 +307,7 @@
 }
 
 .rst{
+  cursor: pointer;
   border-radius: 3px;
   background-color: #ffffff;
   border: 2px solid transparent;
@@ -316,4 +319,39 @@
 .rst:hover {
   border: 2px solid rgba(0, 0, 0, 0.171);
   transform: scale(0.9);
+}
+
+.open-to-pc{
+  display: none;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+@media(max-width: 1400px){
+  .dollar-img{
+    left: 300px;
+    z-index: 2;
+    
+  }
+
+  .task{
+    margin-top: 10px;
+  }
+}
+
+@media(max-width: 1200px){
+  .dollar-img{
+    left: 240px;
+  }
+}
+
+@media(max-width: 1000px){
+  .max-height{
+    display: none;
+  }
+
+  .open-to-pc{
+    display: flex;
+  }
 }

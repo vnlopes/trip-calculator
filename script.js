@@ -20,14 +20,14 @@ const butt = () => {
     alertaDollar.style.display = 'none';
     preco = dollar.value / 4.93;
     preco = preco.toFixed(2)
-    valorFinal.innerHTML ='Você tem ' + preco + ' U$ para gastar!';
+    valorFinal.innerHTML ='Você tem ' + preco + 'U$ para gastar. Aproveite a viagem!';
     
   };
 
   if (input.value.includes("@")) {
     // input.value = "";
     // dollar.value = "";
-    alert("Email enviado");
+    alert("Informações coletadas!");
     let boxOne = document.querySelector('.main').style.display = 'none';
     let boxTwo = document.querySelector('.main-2').style.display = 'flex';
     let reboot = document.querySelector('.reboot').style.display = 'flex';
