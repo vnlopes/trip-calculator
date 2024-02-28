@@ -217,6 +217,79 @@
     gap: 30px;
   }
 
+  #valor-final, .email-final{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+
+  .reboot{
+    border: none;
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 150px;
+    height: 50px;
+    transition: 0.3s;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reboot:hover{
+    transform: scale(0.9);
+    box-shadow: rgba(0, 0, 0, 0.185) 7px 7px 7px;
+  }
+
+  .dollar-img{
+    filter: drop-shadow(rgba(0, 0, 0, 0.192) -7px 17px 9px);
+    width: 120px;
+    position: absolute;
+    left: 380px;
+    top: 230px;
+    animation: sobedesce infinite alternate-reverse 5s;
+  }
+
+  a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  @keyframes sobedesce{
+    0%{
+      transform: translateY(5px);
+    } 50%{
+      transform: translateY(25px);
+    } 100%{
+      transform: translateY(10px);
+    }
+  }
+
+  .main-2{
+    min-height: 300px;
+    background-color: white;
+    box-shadow: black 15px 15px;
+    border-radius: 20px;
+    justify-content: center;
+    width: 550px;
+    border: 3px solid black;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    display: none;
+  }
+
+  .last-value{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .add-email, .add-us{
+    display: flex;
+    flex-direction: column;
+  }
+
 
 .send{
   transition: 0.3s;

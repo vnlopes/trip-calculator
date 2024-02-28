@@ -20,7 +20,7 @@ const butt = () => {
     alertaDollar.style.display = 'none';
     preco = dollar.value / 4.93;
     preco = preco.toFixed(2)
-    valorFinal.innerHTML ='Você tem ' + preco + ' dollars para gastar!';
+    valorFinal.innerHTML ='Você tem ' + preco + ' U$ para gastar!';
     
   };
 
@@ -28,7 +28,10 @@ const butt = () => {
     // input.value = "";
     // dollar.value = "";
     alert("Email enviado");
-    emailFinal.innerHTML = 'Seu e-mail informado é: ' + input.value + '';
+    let boxOne = document.querySelector('.main').style.display = 'none';
+    let boxTwo = document.querySelector('.main-2').style.display = 'flex';
+    let reboot = document.querySelector('.reboot').style.display = 'flex';
+    emailFinal.innerHTML = input.value + '';
     alertaArroba.style.display = 'none';
   } else {
     alertaArroba.style.display = 'flex';
@@ -41,3 +44,9 @@ const rst = () => {
   input.value = "";
   dollar.value = "";
 };
+
+const init = () => {
+  let boxTwo = document.querySelector('.main-2').style.display = 'none';
+  let boxOne = document.querySelector('.main').style.display = 'flex';
+  let reboot = document.querySelector('.reboot').style.display = 'none';
+}
