@@ -348,12 +348,20 @@
 }
 
 @media(max-width: 1000px){
+
+  body{
+    background-color: white;
+    height: 100vh;
+  }
+
   .max-height{
     display: none;
   }
 
   .open-to-pc{
+    align-items: center;
     display: flex;
+    color: black;
   }
 }
 
